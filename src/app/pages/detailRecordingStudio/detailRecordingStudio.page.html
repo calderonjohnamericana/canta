@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>detalles estudio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form  [formGroup]="updateRecordingStudioForm" (submit)= "updateRecordingStudio()" >
+    <ion-item>
+      <ion-label stacked> Nombre del estudio </ion-label>
+      <ion-input formControlName="nameRecording"  type="text" value="{{ recordingStudio.nameRecording}}" placeholder="Como se llama el estudio de grabacion? "> </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked> tipo de melodias </ion-label>
+      <ion-input formControlName="typeOfMelody"  type="text" value="{{ recordingStudio.typeOfMelody }}" placeholder="Que melodias maneja principalmente el estudio? "> </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked> Cabinas</ion-label>
+      <ion-input formControlName="numberOfCabins"  type="text" value="{{ recordingStudio.numberOfCabins }}" placeholder="Cuantas cabinas de grabacion tiene el estudio? "> </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Gerente</ion-label>
+      <ion-input formControlName="owner"  type="text" value="{{ recordingStudio.owner }}" placeholder="Quien es el gerente del estudio? "> </ion-input>
+    </ion-item>
+    <ion-button expand="block" type="submit" >Editar Estudio de grabacion </ion-button>
+    
+    <ion-button expand="block"  (click)="deleteRecordingStudio()"> Eliminar Estudio de grabacion </ion-button>
+  </form>
+
+  </ion-content>

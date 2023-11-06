@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'detail/:id',
     loadChildren: () => import('./pages/detail/detail.module').then( m => m.DetailPageModule)
   },
+  {
+    path: 'createRecordingStudio',
+    loadChildren: () => import('./pages/createRecordingStudio/createRecordingStudio.module').then( m => m.CreateRecordingStudioPageModule)
+  },
+  {
+    path: 'detailRecordingStudio/:id',
+    loadChildren: () => import('./pages/detailRecordingStudio/detailRecordingStudio.module').then( m => m.DetailRecordingStudioPageModule)
+  },
 ];
 
 @NgModule({
