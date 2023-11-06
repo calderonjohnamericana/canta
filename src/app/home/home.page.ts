@@ -7,9 +7,9 @@ import { FirestoreService } from '../services/data/firestore.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  songList:any=[];
-  
-  constructor(private fservice:FirestoreService) {}
+  songList: any=[];
+
+  constructor(private fservice: FirestoreService) {}
 
   ngOnInit() {
     this.songList= this.fservice.getSongList().valueChanges();

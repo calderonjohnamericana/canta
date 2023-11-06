@@ -1,10 +1,9 @@
-export var firebaseConfig = {
-    apiKey: "AIzaSyBLxCM4rYDRH1XU6gD5JNV2G36lcSMYnrY",
-    authDomain: "fir-2022-1-618f0.firebaseapp.com",
-    databaseURL: "https://fir-2022-1-618f0-default-rtdb.firebaseio.com",
-    projectId: "fir-2022-1-618f0",
-    storageBucket: "fir-2022-1-618f0.appspot.com",
-    messagingSenderId: "33151024818",
-    appId: "1:33151024818:web:bf35e9e6392200398ad3ab",
-    measurementId: "G-DRD7P49TCP"
-    };
+export const firebaseConfig = {
+	apiKey: 'AIzaSyDFN_z7e2ylRMxzoZLPqgQ5VwmMRfvD-Xc',
+	authDomain: 'parcial2-2a0a1.firebaseapp.com',
+	projectId: 'parcial2-2a0a1',
+	storageBucket: 'parcial2-2a0a1.appspot.com',
+	messagingSenderId: '64078038354',
+	appId: '1:64078038354:web:6d2cc81d224dcea1be268b',
+	measurementId: 'G-2BH4D7RXSM'
+};
